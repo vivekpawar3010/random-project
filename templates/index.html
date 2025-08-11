@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <title>YouTube Downloader</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
   </head>
   <body>
     <div class="container">
@@ -18,9 +21,6 @@
         />
         <button type="submit">Download</button>
       </form>
-      <div id="result"></div>
     </div>
-    <!-- If you have JS, add here -->
-    <script src="yt_downloader.py"></script>
   </body>
 </html>
